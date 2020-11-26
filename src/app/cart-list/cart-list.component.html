@@ -1,0 +1,17 @@
+<h2>Carts</h2>
+
+<div *ngFor="let cart of carts" class="cart-item">
+	<h3>
+		<a [routerLink]="['/carts', cart.cartId]">
+			{{ cart.number }}
+		</a>
+	</h3>
+	<h4>
+		{{ cart.manufacturerName }}
+	</h4>
+	<p>
+		Condition: {{ cart.condition }}
+	</p>
+	<a class="button" [routerLink]="['/carts/edit', cart.cartId]">Edit</a>
+	<button class="button" (click)="deleteCart(cart.cartId)">Delete</button>
+</div>

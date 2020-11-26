@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "cart-app"
+    }
+  },
+  "defaultProject": "cart-app",
+  "cli": {
+    "analytics": "99608d16-1e54-4387-8c91-763b96a383b2"
+  }
 }
